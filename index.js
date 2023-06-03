@@ -22,12 +22,13 @@
 
 const express = require('express')
 const app = express()
+const cors = require('cors')
 
 app.get('/', (req,res)=>{
     res.send('hello world')
 })
 
-app.get('services', (req,res)=>{
+app.get('/services', (req,res)=>{
     res.send('this is services route')
 })
 
