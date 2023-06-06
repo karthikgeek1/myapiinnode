@@ -25,6 +25,12 @@ const app = express()
 const cors = require('cors')
 app.use(cors())
 app.get('/', (req,res)=>{
+    res.json([
+        {
+            name:'karthik',
+            age:19
+        }
+        ])
     res.send('hello world')
 })
 
